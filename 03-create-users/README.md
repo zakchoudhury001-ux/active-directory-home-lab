@@ -24,6 +24,14 @@ Create domain user accounts and place them into the correct Organizational Unit 
 4. Configured each user's logon name and initial password.
 5. Verified that all three users were located inside the correct `Users` OU.
 
+## Screenshots
+
+### Creating the First User
+
+The first domain user, Kai Morris, was created inside the `Manchester → Users` OU.
+
+![Creating the First User](./01-user-creation.png)
+
 ## Key Concepts Learned
 
 ### Organizational Units (OUs)
@@ -45,12 +53,4 @@ Security Group
  ↓
 Permissions
  ↓
-File / Folder:
-
-## Screenshots
-
-### Creating the First User
-
-The first domain user, Kai Morris, was created inside the `Manchester → Users` OU.
-
-![Creating the First User](./01-user-creation.png)
+File / Folder
