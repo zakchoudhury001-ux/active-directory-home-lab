@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create domain user accounts and place them in the correct Organizational Unit (OU) for the Manchester branch.
+Create domain user accounts and place them into the correct Organizational Unit (OU) for the Manchester branch.
 
 ## Environment
 
@@ -17,18 +17,12 @@ Create domain user accounts and place them in the correct Organizational Unit (O
 
 1. Opened **Active Directory Users and Computers**.
 2. Navigated to `_Branches → Manchester → Users`.
-3. Created the first domain user account.
-4. Configured the user's logon name and initial password.
-5. Created the additional domain user accounts.
-6. Verified that all users were located inside the correct `Users` OU.
-
-## User Accounts
-
-The following accounts were created for the Manchester branch:
-
-- Kai Morris (`kmorris`)
-- Ste Johnson (`sjohnson`)
-- Tom Stuart (`tstuart`)
+3. Created three domain user accounts:
+   - Kai Morris (`kmorris`)
+   - Ste Johnson (`sjohnson`)
+   - Tom Stuart (`tstuart`)
+4. Configured each user's logon name and initial password.
+5. Verified that all three users were located inside the correct `Users` OU.
 
 ## Key Concepts Learned
 
@@ -36,33 +30,27 @@ The following accounts were created for the Manchester branch:
 
 OUs are containers used to organise users, computers, and other Active Directory objects.
 
-Placing users into the correct OU allows administrators to apply appropriate **Group Policy**, delegation, and management settings based on their location or department.
+Placing users into the correct OU allows administrators to apply appropriate Group Policy, delegation, and management settings based on their location or department.
 
-### Security Groups vs OUs
+### Security Groups and Permissions
 
-An OU does **not** directly give a user access to a file or resource.
+OUs do not directly give users access to files or folders.
 
-Access is normally controlled through **security groups and permissions**.
-
-For example:
-
-`User → Security Group → Resource Permissions`
-
-## What I Learned
-
-I learned how to create domain user accounts in Active Directory and place them into the correct OU.
-
-I also learned that the OU is used for organisation and management, while security groups and permissions are used to control access to resources.
-
-## Lab Structure
+Access is normally controlled through security groups and permissions.
 
 ```text
-zak.lab.local
-└── _Branches
-    └── Manchester
-        ├── Users
-        │   ├── Kai Morris
-        │   ├── Ste Johnson
-        │   └── Tom Stuart
-        ├── Workstations
-        └── Laptops
+User
+ ↓
+Security Group
+ ↓
+Permissions
+ ↓
+File / Folder
+
+## Screenshots
+
+### Creating the First User
+
+The first domain user, Kai Morris, was created inside the `Manchester → Users` OU.
+
+![Creating the First User](./01-user-creation.png)
