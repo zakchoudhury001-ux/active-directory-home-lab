@@ -22,6 +22,12 @@ I selected **Active Directory Domain Services (AD DS)** as the server role to in
 
 ![AD DS Role Selection](./01-ad-ds-role.png)
 
+### Required AD DS Features
+
+Windows prompted me to install the required management features for Active Directory Domain Services.
+
+![AD DS Required Features](./02-ad-ds-features.png)
+
 4. Selected **Role-based or feature-based installation**.
 5. Selected `DC01` as the target server.
 6. Installed the **Active Directory Domain Services (AD DS)** role.
