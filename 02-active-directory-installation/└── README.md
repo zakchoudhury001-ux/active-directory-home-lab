@@ -34,6 +34,12 @@ The Active Directory Domain Services role was successfully installed on `DC01`.
 
 ![AD DS Installation Completed](./03-ad-ds-installed.png)
 
+### Domain Controller Configuration
+
+I configured the Domain Controller options, including the DNS Server and Global Catalog.
+
+![Domain Controller Options](./04-domain-controller-options.png)
+
 4. Selected **Role-based or feature-based installation**.
 5. Selected `DC01` as the target server.
 6. Installed the **Active Directory Domain Services (AD DS)** role.
