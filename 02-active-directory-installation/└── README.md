@@ -28,6 +28,12 @@ Windows prompted me to install the required management features for Active Direc
 
 ![AD DS Required Features](./02-ad-ds-features.png)
 
+### AD DS Installation Completed
+
+The Active Directory Domain Services role was successfully installed on `DC01`.
+
+![AD DS Installation Completed](./03-ad-ds-installed.png)
+
 4. Selected **Role-based or feature-based installation**.
 5. Selected `DC01` as the target server.
 6. Installed the **Active Directory Domain Services (AD DS)** role.
