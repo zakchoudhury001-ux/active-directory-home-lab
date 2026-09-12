@@ -45,7 +45,7 @@ Security Group
  ↓
 Permissions
  ↓
-File / Folder
+File / Folder:
 
 ## Screenshots
 
