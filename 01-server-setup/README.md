@@ -36,3 +36,8 @@ Deploy a Windows Server 2022 VM in Microsoft Azure as the foundation for the Act
 - [x] Windows Server VM deployed
 - [x] Network configured
 - [x] Private IP configured as Static
+
+
+## Azure Resource Topology
+
+![Azure Resource Topology](./Screenshot%202026-09-12%20at%2018.05.43.png)
