@@ -1,37 +1,71 @@
-## 1. Installing AD DS
+# Active Directory Domain Services Installation
 
-I opened Server Manager and selected Add Roles and Features.
+## Objective
 
-![Add Roles and Features](./images/01-add-roles.png)
+Install Active Directory Domain Services (AD DS) on the Windows Server VM `DC01` and prepare the server to become a Domain Controller.
 
----
+## Environment
 
-## 2. Selecting Active Directory Domain Services
+- **Server:** DC01
+- **Operating System:** Windows Server 2022 Datacenter
+- **Platform:** Microsoft Azure
+- **Role:** Active Directory Domain Services (AD DS)
 
-I selected the Active Directory Domain Services role and installed the required management tools.
+## What I Did
 
-![AD DS Role](./images/02-ad-ds-role.png)
+1. Connected to `DC01` using Remote Desktop.
+2. Opened Server Manager.
+3. Selected **Add Roles and Features**.
+4. Selected **Role-based or feature-based installation**.
+5. Selected `DC01` as the target server.
+6. Installed the **Active Directory Domain Services (AD DS)** role.
+7. Installed the associated AD DS management tools.
+8. Opened the **Active Directory Domain Services Configuration Wizard**.
+9. Selected **Add a new forest** to create a new Active Directory environment.
+10. Configured the Domain Controller options.
+11. Left DNS delegation disabled because this is a new environment.
+12. Successfully passed the prerequisite checks.
+13. Started the Domain Controller promotion.
 
----
+## Key Concepts Learned
 
-## 3. Domain Controller Configuration
+### Active Directory Domain Services (AD DS)
 
-I configured the Domain Controller options, including DNS and Global Catalog.
+AD DS is a Windows Server role that provides directory services for managing users, computers, groups and authentication within a Windows domain.
 
-![Domain Controller Options](./images/03-domain-controller-options.png)
+### Domain Controller
 
----
+A Domain Controller is a server that hosts AD DS and provides authentication and authorization services for the domain.
 
-## 4. DNS Configuration
+### Global Catalog
 
-The DNS delegation option was left unchecked because this is a new AD environment.
+The Global Catalog provides a searchable directory of objects across the Active Directory forest.
 
-![DNS Options](./images/04-dns-options.png)
+### DNS
 
----
+DNS is closely integrated with Active Directory and allows computers and services to locate Domain Controllers and other domain resources.
 
-## 5. Prerequisite Check
+## Important Notes
 
-All prerequisite checks passed successfully before beginning the promotion.
+During the promotion process, Windows displayed a DNS delegation warning. This was expected because this lab is creating a new Active Directory environment without an existing parent DNS zone.
 
-![Prerequisites Check](./images/05-prerequisites-passed.png)
+The prerequisite checks completed successfully before the promotion began.
+
+## What I Learned
+
+Installing the AD DS role does not automatically make a server a Domain Controller.
+
+The server must first have the AD DS role installed and then be **promoted to a Domain Controller**, which creates/configures the Active Directory environment.
+
+### AD Structure
+
+```text
+Forest
+   │
+   └── Domain
+         │
+         └── Domain Controller (DC01)
+                │
+                ├── Users
+                ├── Groups
+                └── Computers
