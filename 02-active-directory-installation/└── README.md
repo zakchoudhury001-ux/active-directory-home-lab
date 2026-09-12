@@ -57,7 +57,7 @@ After the server rebooted, Server Manager showed AD DS and DNS, confirming that 
 
 ![Domain Controller Promotion Completed](./05-domain-controller-success.png)
 
-## Step 4 — Active Directory Structure
+ — Active Directory Structure
 
 I created an Organizational Unit (OU) structure to organise users and computers by branch and device type.
 
@@ -71,7 +71,7 @@ zak.lab.local
         ├── Users
         ├── Workstations
         └── Laptops
-        
+
 ![Active Directory OU Structure](./06-ad-structure.png)
 
 ## Key Concepts Learned
