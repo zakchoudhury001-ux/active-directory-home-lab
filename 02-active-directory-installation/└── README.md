@@ -51,6 +51,12 @@ I configured the Domain Controller options, including the DNS Server and Global 
 
 ![Domain Controller Options](./04-domain-controller-options.png)
 
+### 5. Domain Controller Promotion Completed
+
+After the server rebooted, Server Manager showed AD DS and DNS, confirming that DC01 was successfully promoted to a Domain Controller.
+
+![Domain Controller Promotion Completed](./05-domain-controller-success.png)
+
 ## Key Concepts Learned
 
 ### Active Directory Domain Services (AD DS)
