@@ -36,7 +36,7 @@ The first domain user, Kai Morris, was created inside the `Manchester → Users`
 
 After creating the remaining accounts, I verified that Kai Morris, Ste Johnson, and Tom Stuart were all located inside the `Manchester → Users` OU.
 
-![More Users Created](./02-more-users-created.png)
+![More Users Created](./02-more-users-created.1png)
 
 ## Key Concepts Learned
 
