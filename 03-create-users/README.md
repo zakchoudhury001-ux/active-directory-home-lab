@@ -28,7 +28,7 @@ Create domain user accounts and place them into the correct Organizational Unit 
 
 ### Creating the First User
 
-The first domain user, Kai Morris, was created inside the `Manchester → Users` OU.
+The first domain user, Kai Morris, was created inside the `Manchester → Users` 
 
 ![Creating the First User](./01-user-creation.png)
 
