@@ -32,6 +32,12 @@ The first domain user, Kai Morris, was created inside the `Manchester → Users`
 
 ![Creating the First User](./01-user-creation.png)
 
+### More Users Created
+
+After creating the remaining accounts, I verified that Kai Morris, Ste Johnson, and Tom Stuart were all located inside the `Manchester → Users` OU.
+
+![More Users Created](./02-more-users-created.png)
+
 ## Key Concepts Learned
 
 ### Organizational Units (OUs)
