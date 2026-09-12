@@ -16,6 +16,17 @@ Install Active Directory Domain Services (AD DS) on the Windows Server VM `DC01`
 1. Connected to `DC01` using Remote Desktop.
 2. Opened Server Manager.
 3. Selected **Add Roles and Features**.
+4. Selected **Role-based or feature-based installation**.
+5. Selected `DC01` as the target server.
+6. Installed the **Active Directory Domain Services (AD DS)** role.
+7. Installed the associated AD DS management tools.
+8. Opened the **Active Directory Domain Services Configuration Wizard**.
+9. Selected **Add a new forest** to create a new Active Directory environment.
+10. Configured the Domain Controller options.
+11. Left DNS delegation disabled because this is a new environment.
+12. Successfully passed the prerequisite checks.
+13. Started the Domain Controller promotion.
+
 ### AD DS Role Selection
 
 I selected **Active Directory Domain Services (AD DS)** as the server role to install.
@@ -39,17 +50,6 @@ The Active Directory Domain Services role was successfully installed on `DC01`.
 I configured the Domain Controller options, including the DNS Server and Global Catalog.
 
 ![Domain Controller Options](./04-domain-controller-options.png)
-
-4. Selected **Role-based or feature-based installation**.
-5. Selected `DC01` as the target server.
-6. Installed the **Active Directory Domain Services (AD DS)** role.
-7. Installed the associated AD DS management tools.
-8. Opened the **Active Directory Domain Services Configuration Wizard**.
-9. Selected **Add a new forest** to create a new Active Directory environment.
-10. Configured the Domain Controller options.
-11. Left DNS delegation disabled because this is a new environment.
-12. Successfully passed the prerequisite checks.
-13. Started the Domain Controller promotion.
 
 ## Key Concepts Learned
 
