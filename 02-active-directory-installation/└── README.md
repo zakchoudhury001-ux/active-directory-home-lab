@@ -16,6 +16,12 @@ Install Active Directory Domain Services (AD DS) on the Windows Server VM `DC01`
 1. Connected to `DC01` using Remote Desktop.
 2. Opened Server Manager.
 3. Selected **Add Roles and Features**.
+### AD DS Role Selection
+
+I selected **Active Directory Domain Services (AD DS)** as the server role to install.
+
+![AD DS Role Selection](./01-ad-ds-role.png)
+
 4. Selected **Role-based or feature-based installation**.
 5. Selected `DC01` as the target server.
 6. Installed the **Active Directory Domain Services (AD DS)** role.
