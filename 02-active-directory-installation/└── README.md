@@ -72,7 +72,7 @@ zak.lab.local
         ├── Workstations
         └── Laptops
 
-![Active Directory OU Structure](06-ad-structure (1).png)
+![Active Directory OU Structure](./06-ad-structure%20%281%29.png)
 
 ## Key Concepts Learned
 
