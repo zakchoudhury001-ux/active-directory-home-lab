@@ -229,6 +229,42 @@ After restarting CLIENT01, the domain membership was verified using `systeminfo`
 
 ![Domain Join Verification](./04-domain-join-verification.png)
 
+
+## Computer Account Organisation
+
+After successfully joining CLIENT01 to the domain, the computer account initially appeared in the default `Computers` container.
+
+I moved CLIENT01 into the appropriate branch structure:
+
+```text
+zak.lab.local
+└── _Branches
+    └── Manchester
+        └── Workstations
+            └── CLIENT01
+```
+
+This keeps computer accounts organised according to their branch and device type and allows appropriate Group Policy and management settings to be applied to the workstation.
+
+## Remote Desktop Verification
+
+I added the domain user `kmorris` to the **Remote Desktop Users** group on CLIENT01.
+
+I then successfully connected to CLIENT01 using the `kmorris` domain account.
+
+I also used:
+
+```cmd
+whoami /groups
+```
+
+to verify that the logged-in user received their Active Directory security group membership.
+
+This demonstrated the difference between **authentication** and **authorization**:
+
+- Authentication → verifying the user's identity.
+- Authorization → determining what the user is allowed to do.
+
 ## AI Assistance
 
 AI was used as a learning aid to help understand the Active Directory concepts, DNS configuration, troubleshooting process, and domain join procedure.
