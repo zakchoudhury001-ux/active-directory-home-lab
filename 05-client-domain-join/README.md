@@ -171,21 +171,6 @@ Authorization / permissions
 
 This is useful when troubleshooting real IT Support issues because it helps identify where a problem is occurring instead of changing settings randomly.
 
-## What I Learned
-
-I learned how to prepare a client machine for an Active Directory domain join.
-
-I learned how to:
-
-- Connect a client VM to the same Azure network as the Domain Controller.
-- Configure the Domain Controller as the client's DNS server.
-- Test network connectivity using `ping`.
-- Test DNS resolution using `nslookup`.
-- Join a client computer to an Active Directory domain.
-- Verify domain membership after restarting the client.
-- Understand the difference between authentication and authorization.
-- Troubleshoot connectivity and DNS issues methodically.
-
 
 ## Screenshots
 
