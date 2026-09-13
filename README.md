@@ -1,7 +1,6 @@
 # Active Directory Home Lab
 
-A hands-on Active Directory lab based on the **Active Directory Basics** lab by Jake's Tech Labs.
-
+A hands-on Active Directory lab based on the **Active Directory Basics** 
 ## 🎯 Goal
 
 Build and configure an Active Directory environment using Windows Server and Azure while developing practical IT Support and System Administration skills.
