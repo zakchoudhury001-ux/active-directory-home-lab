@@ -38,59 +38,17 @@ After creating the remaining accounts, I verified that Kai Morris, Ste Johnson, 
 
 ![More Users Created](./02-more-users-created%20%281%29.png)
 
-
-## PowerShell Automation
-
-As an additional exercise, I recreated the user creation process using PowerShell.
-
-PowerShell can be used to automate Active Directory user provisioning, which is useful when creating multiple accounts in larger environments.
-
-### What I Did
-
-1. Imported the Active Directory PowerShell module.
-2. Created a variable containing the Distinguished Name (DN) of the Manchester Users OU.
-3. Used `New-ADUser` to create a test domain user.
-4. Used `Set-ADAccountPassword` to securely configure the account password.
-5. Used `Enable-ADAccount` to enable the account.
-6. Used `Get-ADUser` to verify the account details and confirm its location in Active Directory.
-
-### Test Account
-
-- Name: PowerShell Test
-- Username: `pstest`
-- OU: `Manchester → Users`
-- Domain: `zak.lab.local`
-
-### PowerShell Commands
-
-```powershell
-Import-Module ActiveDirectory
-
-
-
-$ou = "OU=Users,OU=Manchester,OU=_Branches,DC=zak,DC=lab,DC=local"
-
-New-ADUser -Name "PowerShell Test" -GivenName "PowerShell" -Surname "Test" -SamAccountName "pstest" -UserPrincipalName "pstest@zak.lab.local" -Path $ou
-
-Set-ADAccountPassword -Identity pstest -Reset -NewPassword (Read-Host -AsSecureString "Enter password")
-
-Enable-ADAccount -Identity pstest
-
-Get-ADUser -Identity pstest -Properties Enabled
-
 ### PowerShell User Creation
 
-I used PowerShell to automate the creation of a test Active Directory user. The account was created in the `Manchester → Users` OU, assigned a password, enabled, and then verified using `Get-ADUser`.
+As an additional exercise, I used PowerShell to automate the creation of a test Active Directory user.
+
+The account was created in the `Manchester → Users` OU, assigned a password, enabled, and then verified using `Get-ADUser`.
 
 ![PowerShell User Creation](./03-powershell-user-creation.png)
 
+## Key Concepts Learned
 
-
-
-
-
-
-
+### Organizational Units (OUs)
 
 OUs are containers used to organise users, computers, and other Active Directory objects.
 
@@ -102,11 +60,6 @@ OUs do not directly give users access to files or folders.
 
 Access is normally controlled through security groups and permissions.
 
-```text
-User
- ↓
-Security Group
- ↓
-Permissions
- ↓
-File / Folder
+
+
+
