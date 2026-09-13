@@ -79,6 +79,14 @@ Enable-ADAccount -Identity pstest
 Get-ADUser -Identity pstest -Properties Enabled
 
 
+
+
+
+
+
+
+
+
 OUs are containers used to organise users, computers, and other Active Directory objects.
 
 Placing users into the correct OU allows administrators to apply appropriate Group Policy, delegation, and management settings based on their location or department.
