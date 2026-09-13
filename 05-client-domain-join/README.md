@@ -186,22 +186,6 @@ I learned how to:
 - Understand the difference between authentication and authorization.
 - Troubleshoot connectivity and DNS issues methodically.
 
-## Lab Structure
-
-```text
-zak.lab.local
-│
-├── _Branches
-│   └── Manchester
-│       ├── Users
-│       ├── Workstations
-│       └── Laptops
-│
-└── OU_Groups
-    ├── Helpdesk
-    ├── Accounting
-    └── ITSupport
-```
 
 ## Screenshots
 
@@ -260,13 +244,3 @@ whoami /groups
 
 to verify that the logged-in user received their Active Directory security group membership.
 
-This demonstrated the difference between **authentication** and **authorization**:
-
-- Authentication → verifying the user's identity.
-- Authorization → determining what the user is allowed to do.
-
-## AI Assistance
-
-AI was used as a learning aid to help understand the Active Directory concepts, DNS configuration, troubleshooting process, and domain join procedure.
-
-The commands and configuration steps were manually performed and verified in my own Windows Server Active Directory lab environment.
