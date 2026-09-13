@@ -24,6 +24,13 @@ Create and configure security groups to organise users and manage access to reso
 5. Opened each group's **Members** section to verify group membership.
 6. Confirmed that users remained members of their security groups independently of their OU location.
 
+
+### Groups Created
+
+The security groups were created inside the `OU_Groups` organizational unit.
+
+![Active Directory Groups](./01-groups-created.png)
+
 ## Security Groups
 
 | Group | Purpose |
