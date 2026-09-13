@@ -78,6 +78,11 @@ Enable-ADAccount -Identity pstest
 
 Get-ADUser -Identity pstest -Properties Enabled
 
+### PowerShell User Creation
+
+I used PowerShell to automate the creation of a test Active Directory user. The account was created in the `Manchester → Users` OU, assigned a password, enabled, and then verified using `Get-ADUser`.
+
+![PowerShell User Creation](./03-powershell-user-creation.png)
 
 
 
